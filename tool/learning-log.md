@@ -12,6 +12,8 @@ Project: **Geography Game**
         * [JsBin Example](https://jsbin.com/kicetoniwe/1/edit?html,css,js,output)
         * Leaflet code is available (copy & paste)
     * Watched [Leaflet Youtube Video](https://www.youtube.com/watch?v=6QFkgOeQc0c&list=PLDmvslp_VR0xjh7wGMNd_1kk0zUox6Sue)
+    * bindPopup --> creates a pop up
+        * A lot of new terms need to be learned such as polygon, L.map, etc
 * How do I alter the map with inputs? Ie; when I let the user insert a country name, how can it be marked/ changed?
     * Conditionals??
 * How can I combine both Kaboom and Leaflet?
