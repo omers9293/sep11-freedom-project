@@ -20,6 +20,21 @@ Project: **Geography Game**
 * Next Steps:
     * Tinker/ Play around with Kaboom
 
+
+11/5/23
+* [Kaboom](https://kaboomjs.com/play?example=add)
+    * Created a kaboom background and changed the sprites into a different one
+        * Done in IDE @ kaboomTinkering.html
+        * Lots of examples online to be inspired from
+    * Watched 10 minutes of [Kaboom Youtube Video](https://www.youtube.com/watch?v=hgReGsh5xVU)
+    * rotate() component gives sprite rotation
+        * tutorials usually define the code in the comments
+* Do I need a sprite for my geography game? Should I add one?
+    * Use sprite and allow it to speak if country guessed is right or wrong
+* What purpose does the sprite have in my future game?
+* Next Steps Tomorrow:
+    * Tinker with D3 JS
+    * Confirm Tools
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
