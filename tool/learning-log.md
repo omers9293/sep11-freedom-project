@@ -83,6 +83,21 @@ Project: **Geography Game**
         * A game involving clicking on a country with a sprite reacting @ IDE
         * Watch the remaining of [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
 
+12/3/23
+* [Kaboom](https://kaboomjs.com/play?example=add) + [Leaflet](https://leafletjs.com/examples/quick-start/)
+    * Created a background including Kaboom and Leaflet.js @ IDE (kableaf)
+        * Analyzed this [Leaflet on Mobile ](https://leafletjs.com/examples/mobile/) tutorial
+            * Will keep this in back of mind to include in FP
+    * Switched out some of this [repl.it](https://replit.com/@omers9293/tinkering3#README.md)code into my own
+    * How can I make this game as interactive as possible?
+        * Should the map also be interactive?
+        * What should my sprite be?
+    * `onKeyPress("space", () =>` utilizes any button on the keyboard just change what's inside the quotes
+    * `L.Control.Scale` shows the scale which applies to the center point of the map.
+    * Next Steps:
+        * Finish watching this [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
+        * Very long video --> watch 10-20 minutes of this [Leaflet.js Tutorial](https://www.youtube.com/watch?v=urOfcs7n4bA)
+            * Follow through and create the example with him
 
 <!--
 * Links you used today (websites, videos, etc)
