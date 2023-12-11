@@ -98,6 +98,7 @@ Project: **Geography Game**
         * Finish watching this [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
         * Very long video --> watch 10-20 minutes of this [Leaflet.js Tutorial](https://www.youtube.com/watch?v=urOfcs7n4bA)
             * Follow through and create the example with him
+            
 12/10/23
 * [Kaboom](https://kaboomjs.com/play?example=add) + [Leaflet](https://leafletjs.com/examples/quick-start/)
     * Finished watching [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
