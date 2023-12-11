@@ -15,21 +15,21 @@
 
 var map = L.map('map').setView([51.505, -0.09], 13);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+L.tileLayer(  .bindPopup('This is where I can write anything I want !! I can edit thi')
     .openPopup();
 
     // Adding game objects to screen
+'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">I can also edit this</a> contributors'
+}).addTo(map);
+
+L.marker([51.5, -0.09]).addTo(map)
 
 // Start a kaboom game
 kaboom()
 
 // Load a sprite asset from "sprites/bean.png", with the name "bean"
-loadSprite("bean", "/tool/images.png")
+loadSprite("bean", "/tool/images.png") //shows the sprite / calls for the sprite??
 
 // A "Game Object" is the basic unit of entity in kaboom
 // Game objects are composed from components

@@ -98,6 +98,22 @@ Project: **Geography Game**
         * Finish watching this [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
         * Very long video --> watch 10-20 minutes of this [Leaflet.js Tutorial](https://www.youtube.com/watch?v=urOfcs7n4bA)
             * Follow through and create the example with him
+12/10/23
+* [Kaboom](https://kaboomjs.com/play?example=add) + [Leaflet](https://leafletjs.com/examples/quick-start/)
+    * Finished watching [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
+    * Watched 20 minutes of this [Leaflet.js Tutorial](https://www.youtube.com/watch?v=urOfcs7n4bA)
+        * Adjusted the size of map using CSS @ map.js
+        * Made map look Geographical including deserts and terrains
+    * `L.marker([51.5, -0.09]).addTo(map);` creates a marker just change the indexes to fit the game
+        * Map will be interactive using a marker for a user to drag and click
+        * Points will be rewarded for correct answers + deducted for wrong
+    * How can I make this map look more friendly? Like cartoon?
+    * How can I make use of D3.js in my game?
+    * Next Steps:
+        * Watch another 20 minutes of this[Leaflet.js Tutorial](https://www.youtube.com/watch?v=urOfcs7n4bA)
+            * Continue following through the example @ map.js
+        * Start brainstorming sprites?
+        * Tinker with D3.js
 
 <!--
 * Links you used today (websites, videos, etc)
