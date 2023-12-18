@@ -98,7 +98,7 @@ Project: **Geography Game**
         * Finish watching this [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
         * Very long video --> watch 10-20 minutes of this [Leaflet.js Tutorial](https://www.youtube.com/watch?v=urOfcs7n4bA)
             * Follow through and create the example with him
- 
+
 12/10/23
 * [Kaboom](https://kaboomjs.com/play?example=add) + [Leaflet](https://leafletjs.com/examples/quick-start/)
     * Finished watching [Kaboom Mario Tuturial](https://www.youtube.com/watch?v=2nucjefSr6I)
@@ -115,6 +115,20 @@ Project: **Geography Game**
             * Continue following through the example @ map.js
         * Start brainstorming sprites?
         * Tinker with D3.js
+
+12/17/23
+* [Kaboom](https://kaboomjs.com/play?example=add) + [Leaflet](https://leafletjs.com/examples/quick-start/)
+    * Watched 20 minutes of this [Leaflet.js Tutorial](https://www.youtube.com/watch?v=urOfcs7n4bA)
+* I finished the blog and reflected on my learning experience
+    * Will try again and create the flappy bird game
+* `keyPress("space", () => { player.jump(); })` is extremely beneficial for any game
+* Didn't do much tinkering this week; focused on blog --> just wanted to watch video above
+    * Next Steps:
+        * Watch [Youtube Video](https://www.youtube.com/watch?v=hgReGsh5xVU&t=327s)
+            * Create flappy bird game in IDE
+    * How can I refactor the flappy bird game when I complete it?
+    * Can the sprite be anything?
+
 
 <!--
 * Links you used today (websites, videos, etc)
