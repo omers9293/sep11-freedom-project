@@ -129,6 +129,19 @@ Project: **Geography Game**
     * How can I refactor the flappy bird game when I complete it?
     * Can the sprite be anything?
 
+12/31/23
+* Watched [Youtube Video](https://www.youtube.com/watch?v=hgReGsh5xVU&t=327s) TWICE
+    * First time was for understanding and the second time to follow through
+    * Created Flappy Bird @ mygame
+* Completed my winter break goals --> need to focus more on leaflet.js than Kaboom
+    * A lot of packages were generated when I initialized Kaboom --> unorganized
+        * Is there a way I can keep them all in one file?
+* `const scoreText = add([  text(score, {size: 50})  ]);` example of displaying and updating score
+    * Will be helpful to keep track of the score in my geography game
+    * Next Steps:
+        * Create a quick game using leaflet with the scoring function in Kaboom
+        * Watch this [Mapping Geolocation with Leaflet.js](https://www.youtube.com/watch?v=nZaZ2dB6pow)
+            * Might be helpful or not (unsure)
 
 <!--
 * Links you used today (websites, videos, etc)
