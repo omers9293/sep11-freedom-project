@@ -143,6 +143,18 @@ Project: **Geography Game**
         * Watch this [Mapping Geolocation with Leaflet.js](https://www.youtube.com/watch?v=nZaZ2dB6pow)
             * Might be helpful or not (unsure)
 
+1/7
+* Watched [Mapping Geolocation with Leaflet.js](https://www.youtube.com/watch?v=nZaZ2dB6pow)
+    * very confusing video --> didn't overlap with anything that I learned with leaflet.js
+        * talked about API and Data
+* `function onMapClick(e) {  alert("You clicked the map at " + e.latlng);} map.on('click', onMapClick);`
+    * For future refrence --> help me react to user interaction
+* How can I combine both Kaboom and Leaflet?
+    * I tried to do so today but white screen popped up @ JSBIN
+        * [JSBIN tinkering](https://jsbin.com/kikinelufa/edit?js,output) // did not work
+    * Next Steps:
+        * Try to merge kaboom + leaflet.js again
+        * Will spend more time trying since that will be a big part of my FP
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
