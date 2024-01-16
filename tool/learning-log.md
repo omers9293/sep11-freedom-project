@@ -143,7 +143,7 @@ Project: **Geography Game**
         * Watch this [Mapping Geolocation with Leaflet.js](https://www.youtube.com/watch?v=nZaZ2dB6pow)
             * Might be helpful or not (unsure)
 
-1/7
+1/7/24
 * Watched [Mapping Geolocation with Leaflet.js](https://www.youtube.com/watch?v=nZaZ2dB6pow)
     * very confusing video --> didn't overlap with anything that I learned with leaflet.js
         * talked about API and Data
@@ -155,6 +155,20 @@ Project: **Geography Game**
     * Next Steps:
         * Try to merge kaboom + leaflet.js again
         * Will spend more time trying since that will be a big part of my FP
+
+1/15/24
+* Watched 20 minutes of this [Leaflet Crash Course](https://www.youtube.com/watch?v=ls_Eue1xUtY)
+    * Was helpful in reviewing some of the concepts I learned
+    * Linked this [Github repo](https://github.com/iamtekson/Leaflet-Basic) --> helpful later b/c provides data
+        *  `.leaflet-popup-content-wrapper {  border-radius: 0%; }` --> changes radius
+        * Can I add Google Maps? --> one of the files in the repo
+* Added a new sprite in my old Flappy Bird game @ IDE
+    * Fixed the index.html file
+    * How can I combine both Kaboom and Leaflet?
+    * Next Steps:
+        * Finish this [Leaflet Crash Course](https://www.youtube.com/watch?v=ls_Eue1xUtY)
+        * Start on the Freedom Project? --> wait for teacher instructions
+            * Feel ready to start & sufficient with the info I learned
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
