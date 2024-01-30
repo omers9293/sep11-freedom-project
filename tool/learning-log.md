@@ -169,6 +169,21 @@ Project: **Geography Game**
         * Finish this [Leaflet Crash Course](https://www.youtube.com/watch?v=ls_Eue1xUtY)
         * Start on the Freedom Project? --> wait for teacher instructions
             * Feel ready to start & sufficient with the info I learned
+
+1/29/24
+* Finished this [Leaflet Crash Course](https://www.youtube.com/watch?v=ls_Eue1xUtY)
+    * [Gihub repo with code](https://github.com/iamtekson/Leaflet-Basic/tree/master/Basic) --> use for refrence
+        * Contains a lot of good starting point like API for google maps and other documentations
+            * folder --> file @ Google Maps
+    * Reviewed my flappybird code and took notice of small things like syntax and spelling
+        * Defining gravity is really important when trying to use keys to jump or move
+            * I changed some positions and dimensions for previous codes I did; got a sense of how they work more
+                * `L.Control.Scale` shows the scale which applies to the center point of the map.
+        * What is a geoserver? Is it something I need to know?
+    * Next Steps:
+        * Start planning for my freedom project
+            * New Semester --> more closer to end of year and need to work on actual FP
+            * Perhaps review any important concepts I learned for kaboom + leaflet.js
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
