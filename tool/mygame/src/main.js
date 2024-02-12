@@ -11,19 +11,19 @@ loadSprite("pipe", "sprites/pipe.png");
 let highScore = 0;
 
 scene("game", () => {
-  const PIPE_GAP = 120;
-  let score = 0;
+  var PIPE_GAP = 120;
+  var score = 0;
 
   add([
     sprite("bg", {width: width(), height: height()})
   ]);
 
-  const scoreText = add([
+  var scoreText = add([
     text(score, {size: 50})
   ]);
 
   // Add a game object to the screen
-  const player = add([
+  var player = add([
     // List of components
     sprite("birdy"),
     scale(2),
@@ -33,7 +33,7 @@ scene("game", () => {
   ]);
 
   function producePipes(){
-    const offset = rand(-50, 50);
+    var offset = rand(-50, 50);
 
     add([
       sprite("pipe"),
