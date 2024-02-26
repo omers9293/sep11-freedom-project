@@ -184,6 +184,18 @@ Project: **Geography Game**
         * Start planning for my freedom project
             * New Semester --> more closer to end of year and need to work on actual FP
             * Perhaps review any important concepts I learned for kaboom + leaflet.js
+
+2/25/24
+* Finished in depth planning of how I will complete MVP/ Freedom Project
+    * Created a new Kaboom game file within IDE for MVP
+* Found the backgrounds that I will use for the game/ and the corresponding sprites
+    * Will add them in sometime next week
+    * Next Steps:
+        * Code the sprite to be mobile all over the screen with both keyboard + mouse
+        * Add Leaflet/D3.js where only countries appear (no regions or provinces)
+* Watched [Kaboom Youtube Video](https://www.youtube.com/watch?v=hgReGsh5xVU)
+* How big should I make the sprite become if the user wins the game?
+    * Utilized this [Github repo](https://github.com/iamtekson/Leaflet-Basic) for reference (specifically for sprites)
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
