@@ -196,6 +196,18 @@ Project: **Geography Game**
 * Watched [Kaboom Youtube Video](https://www.youtube.com/watch?v=hgReGsh5xVU)
 * How big should I make the sprite become if the user wins the game?
     * Utilized this [Github repo](https://github.com/iamtekson/Leaflet-Basic) for reference (specifically for sprites)
+
+3/3/24
+* Tried to work on the FP this week but didn't really have time
+    * Need to make more progress to compensate for the time I didn't spend
+* Will commit to the progress that I have this week --> need to stay productive
+      * Next Steps:
+        * Add backgrounds that I will use for the game/ and the corresponding sprites
+        * Add Leaflet/D3.js where only countries appear (no regions or provinces)
+* [Github repo](https://github.com/iamtekson/Leaflet-Basic)
+    * Create html and css where if clicked on “READY!”, random country pops up (T 3/5)
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
