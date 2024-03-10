@@ -207,6 +207,16 @@ Project: **Geography Game**
 * [Github repo](https://github.com/iamtekson/Leaflet-Basic)
     * Create html and css where if clicked on “READY!”, random country pops up (T 3/5)
 
+3/10/24
+* Made a lot of progress of setting everything up with Kaboom and Leaflet.js
+    * Linked both the Kaboom and Leaflet.js stylesheets in the index file
+* Decided I won't use sprites and will only add them after the MVP --> not very necessary
+* Added the leaflet.js map into the same file with the Kaboom game --> both tools in one
+    * Installed leaflet.js into my terminal
+* Next Steps:
+    * Fix why it says it cannot find package `leaflet` from my workspaces
+    * Didn't get to do last weeks goal of creating html and css where if clicked on “READY!”, a random country pops up (T 3/5)
+        * Complete that ^^
 
 <!--
 * Links you used today (websites, videos, etc)

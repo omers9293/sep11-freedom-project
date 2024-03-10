@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "kaboom": "^3000.1.17"
+    "jsdom": "^24.0.0",
+    "kaboom": "^3000.1.17",
+    "leaflet": "^1.9.4"
   }
 }
