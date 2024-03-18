@@ -218,6 +218,11 @@ Project: **Geography Game**
     * Didn't get to do last weeks goal of creating html and css where if clicked on “READY!”, a random country pops up (T 3/5)
         * Complete that ^^
 
+3/17/24
+* Finished my 4th blog for the freedom project
+    * Haven't been learning much; just trying to progress within my plan
+* Need to put more time on the MVP this week
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

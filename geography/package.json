@@ -1,17 +1,14 @@
 {
-  "name": "geography",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jsdom": "^24.0.0",
-    "kaboom": "^3000.1.17",
-    "leaflet": "^1.9.4"
-  }
+	"name": "mygame",
+	"scripts": {
+		"build": "esbuild --bundle src/main.js --outfile=www/main.js --minify",
+		"dev": "esbuild --bundle src/main.js --outfile=www/main.js --servedir=www",
+		"bundle": "npm run build && mkdir -p dist && zip -r dist/game.zip www -x \"**/.DS_Store\""
+	},
+	"dependencies": {
+		"kaboom": "^3000.1.17"
+	},
+	"devDependencies": {
+		"esbuild": "^0.20.2"
+	}
 }
