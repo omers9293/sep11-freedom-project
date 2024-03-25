@@ -223,6 +223,16 @@ Project: **Geography Game**
     * Haven't been learning much; just trying to progress within my plan
 * Need to put more time on the MVP this week
 
+3/24/24
+* I tried to add Kaboom and Leaflet.js together
+    * I read this leaflet documentation about [Layers Control](https://leafletjs.com/examples/layers-control/)
+* Added the leaflet.js map into the same file with the Kaboom game --> both tools in one
+     * `anchor()` defines the origin point of positioning.
+* Fix why it says it cannot find package `leaflet` from my workspaces
+`var k = kaboom({ global: false })` use that to import kaboom globally
+
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
