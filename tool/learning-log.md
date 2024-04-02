@@ -231,6 +231,20 @@ Project: **Geography Game**
 * Fix why it says it cannot find package `leaflet` from my workspaces
 `var k = kaboom({ global: false })` use that to import kaboom globally
 
+4/1/24
+* I tried all week to make the leaflet and kaboom work conjointly but it did not work
+* I'm going to ask on the slack channel soon and ask friends who have done Kaboom
+    * Once I make them work I will use p5js to make places more interactive
+* Will use a loop to make the game keep repeating after several rounds have been played
+
+```js
+   var map = L.map('map').setView([51.505, -0.09], 13);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+```
+* need to make a lot more progress in upcoming days; this issue is taking so much time
 
 
 <!--
