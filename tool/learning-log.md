@@ -246,6 +246,11 @@ Project: **Geography Game**
 ```
 * need to make a lot more progress in upcoming days; this issue is taking so much time
 
+4/7/24
+* I couldn't make any significant progress due to a track meet this weekend
+    * learned that I should install kaboom first and then utilize some small aspects of leaflet
+* I will create a starter base of the code by the end of the week is the goal
+* It will be that you type in a country in a specific continent and it doesn't do anything for now
 
 <!--
 * Links you used today (websites, videos, etc)
