@@ -101,3 +101,7 @@ scene("gameover", (score) => {
 });
 
 go("game");
+
+onClick("bomb", () => {
+  destroyAll("bomb")
+})

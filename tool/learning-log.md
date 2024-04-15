@@ -259,6 +259,7 @@ onClick("bomb", () => {
     destroyAll("bomb")
 })
 ```
+* Added this code above
 * I'm still working on making both kaboom and leaflet appear on my screen equally on top of each other
     * Right now the leaflet browser is all the way on the top while kaboom is all the way on the bottom
 * Planning on working a lot on this during spring break to make significant progress
