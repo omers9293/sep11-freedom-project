@@ -252,6 +252,18 @@ Project: **Geography Game**
 * I will create a starter base of the code by the end of the week is the goal
 * It will be that you type in a country in a specific continent and it doesn't do anything for now
 
+4/14/24
+* I can use the code below to make a country disappear from my map; something I plan to do as well if I have extra time
+```js
+onClick("bomb", () => {
+    destroyAll("bomb")
+})
+```
+* I'm still working on making both kaboom and leaflet appear on my screen equally on top of each other
+    * Right now the leaflet browser is all the way on the top while kaboom is all the way on the bottom
+* Planning on working a lot on this during spring break to make significant progress
+     * `L.Control.Scale` shows the scale which applies to the center point of the map.
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
