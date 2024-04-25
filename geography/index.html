@@ -69,11 +69,21 @@
 
 
 function randCountry(){
-    var array = ["Afghanistan", "Baden", "Cabo Verde"];
+    var array = ["Afghanistan", "Baden", "Cabo Verde", "United States", "Russia"];
 var index = Math.floor(Math.random() * array.length);
 document.querySelector("#whatever").innerHTML = array[index];
+placeMarker(array[index])
+
 }
 
+async function placeMarker(country) {
+  var response = await fetch(`https://api.opencagedata.com/geocode/v1/json?key=1a0d06fccea64982892136fc68e0d70c&q=${country}`);
+  var data = await response.json();
+  var lat = data.results[0].geometry.lat;
+  var lng = data.results[0].geometry.lng;
+  L.marker([lat, lng]).addTo(map)
+
+}
 
 </script>
 
