@@ -78,7 +78,21 @@ placeMarker(array[index])
 
 }
 
-async function placeMarker(country) {
+document.addEventListener("keyup", (event) => {
+        if(event.target.value) {
+            var input = event.target.value.toLowerCase().replace(/\s/g, '');
+            countries.forEach((i) => {
+                if(i.toLowerCase().replace(/\s/g, '') == input && !found.includes(input)) {
+                    typeInput.value = "";
+                    found.push(input);
+                    getScore();
+                    placeMarker(i);
+                }
+            })
+        }
+    })
+
+    async function placeMarker(country) {
   var response = await fetch(`https://api.opencagedata.com/geocode/v1/json?key=1a0d06fccea64982892136fc68e0d70c&q=${country}`);
   var data = await response.json();
   var lat = data.results[0].geometry.lat;
@@ -86,6 +100,12 @@ async function placeMarker(country) {
   L.marker([lat, lng]).addTo(map)
 
 }
+
+function getScore() {
+    countFoundDisplay.innerHTML = found.length;
+    countTotalDisplay.innerHTML = countries.length;
+}
+
 
 </script>
 
