@@ -70,13 +70,13 @@
 
 
 
-function randCountry(){
-    var array = ["Afghanistan", "Baden", "Cabo Verde", "United States", "Russia"];
-var index = Math.floor(Math.random() * array.length);
-document.querySelector("#whatever").innerHTML = array[index];
-placeMarker(array[index])
+    var countries = ["Afghanistan", "Baden", "Cabo Verde", "United States", "Russia"];
+    var found = [];
+    var typeInput = document.querySelector('input');
+    var countFoundDisplay = document.querySelector('#countFound');
+    var countTotalDisplay = document.querySelector('#countTotal');
 
-}
+    getScore();
 
 document.addEventListener("keyup", (event) => {
         if(event.target.value) {
