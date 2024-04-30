@@ -1,29 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <style>
-            /* CSS */
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-        </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
 
-        <title>Title</title>
-    </head>
-    <body>
-        <!-- HTML -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <style>
+        /* CSS */
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #map {
+            height: calc(100% - 50px);
+            width: 100vw;
+        }
+
+        .search-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .rapper{
+            text-align: center;
+        }
+
+    </style>
+    <title>Geography Game</title>
+</head>
+<body>
+<!-- HTML -->
+<div class="rapper">
+    <h1>Type a Country for it to appear!</h1>
+    <input type="text">
+    <p>Countries Found: <span id="countFound"></span>/<span id="countTotal"></span></p>
+    <!-- <button onClick="randCountry();"></button> -->
+</div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- <script src="script.js"></script> -->
-        <script>
-            // JS
+<div id="map"></div>
 
 
-        </script>
-    </body>
+<div class="search-box">
+</div>
+
+<script>
+    var map = L.map('map').setView([0, 0], 2); // Set the initial view to the entire world
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+
+
+    var countries = [
+        "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
+        "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
+        "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia",
+        "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo (Congo-Brazzaville)",
+        "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia (Czech Republic)", "Democratic Republic of the Congo", "Denmark", "Djibouti",
+        "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea",
+        "Estonia", "Eswatini (fmr. Swaziland)", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
+        "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Holy See", "Honduras", "Hungary", "Iceland",
+        "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan",
+        "Kenya", "Kiribati", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein",
+        "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania",
+        "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (formerly Burma)",
+        "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia (formerly Macedonia)",
+        "Norway", "Oman", "Pakistan", "Palau", "Palestine State", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland",
+        "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa",
+        "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
+        "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname",
+        "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia",
+        "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States of America",
+        "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+        ];
+    var found = [];
+    var typeInput = document.querySelector('input');
+    var countFoundDisplay = document.querySelector('#countFound');
+    var countTotalDisplay = document.querySelector('#countTotal');
+
+    getScore();
+
+document.addEventListener("keyup", (event) => {
+        if(event.target.value) {
+            var input = event.target.value.toLowerCase().replace(/\s/g, '');
+            countries.forEach((i) => {
+                if(i.toLowerCase().replace(/\s/g, '') == input && !found.includes(input)) {
+                    typeInput.value = "";
+                    found.push(input);
+                    getScore();
+                    placeMarker(i);
+                }
+            })
+        }
+    })
+
+    async function placeMarker(country) {
+  var response = await fetch(`https://api.opencagedata.com/geocode/v1/json?key=1a0d06fccea64982892136fc68e0d70c&q=${country}`);
+  var data = await response.json();
+  var lat = data.results[0].geometry.lat;
+  var lng = data.results[0].geometry.lng;
+  L.marker([lat, lng]).addTo(map)
+
+}
+
+function getScore() {
+    countFoundDisplay.innerHTML = found.length;
+    countTotalDisplay.innerHTML = countries.length;
+}
+
+
+</script>
+
+</body>
 </html>
