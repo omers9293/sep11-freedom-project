@@ -158,6 +158,7 @@
         // hint button click
         document.getElementById("hintButton").addEventListener("click", giveHint);
 
+        // to give random country as a hint
         function giveHint() {
             var randomIndex = Math.floor(Math.random() * countries.length);
             var hintCountry = countries[randomIndex];
@@ -165,6 +166,7 @@
             alert("Hint: Try " + hintCountry);
         }
 
+        // placing a marker on the map for a given country as user types in
         async function placeMarker(country) {
             var response = await fetch(`https://api.geoapify.com/v1/geocode/search?text=${country}&apiKey=24ad17ae16e9447f95b0165eb327a2a1`);
             var data = await response.json();
