@@ -44,9 +44,17 @@ Since the last blog entry, I have worked hard and was able to finish my MVP (Min
 **explain a little more here**
 
 
+**explain here**
 ```js
-
+ function giveHint() {
+            var randomIndex = Math.floor(Math.random() * countries.length);
+            var hintCountry = countries[randomIndex];
+            // random country as a hint
+            alert("Hint: Try " + hintCountry);
+        }
 ```
+**explain a little more**
+
 #### EDP + Skills
 
 The Engineering Design Process (EDP) that I'm currently in can be classified
