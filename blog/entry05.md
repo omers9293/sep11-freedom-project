@@ -41,9 +41,9 @@ The code below is essentially an event listener that looks for whenever the user
                     // Trigger confetti animation
                     handleConfetti();
 ```
-The part of the code where it states `querySelector("input").disabled = true;` helps make the game more functionable by making it impossible to put more countries than the requirement. This is because when I put the short answer key of "Omer", it will not disable the user's ability to insert all of the other countries that remain. It's also helpful in letting the user that they have officially won the game. I found this [Confetti Libary](https://github.com/loonywizard/js-confetti) to be extremely helpful for when I wanted to create a ending sequence to the game after the user has officially won the game. I originally wanted it to be all over the screen but wasn't possible because leaflet.js was overrunning it which was completely normal. I called the function,`handleConfetti`, for it to work something I originally forgot to do.
+The part of the code where it states `querySelector("input").disabled = true;` helps make the game more functionable by making it impossible to put more countries than the requirement. This is because when I put the short answer key of "Omer", it will not disable the user's ability to insert all of the other countries that remain. It's also helpful in letting the user that they have officially won the game. I found this [Confetti Libary](https://github.com/loonywizard/js-confetti) to be extremely helpful for when I wanted to create a ending sequence to the game after the user has officially won the game. I originally wanted it to be all over the screen but wasn't possible because **leaflet.js** was overrunning it which was completely normal. I called the function,`handleConfetti`, for it to work something I originally forgot to do.
 
-I decided that I wanted to give the users some hints to complete the end of the game since practically not everyone knows the entire world from the top of their heads. I did this by creating a new variable which I named `randomIndex` which will then generate a random number between 0 and the length of the entire array called countries. Keep in mind that the array `countries` is where all of the countries are listed which is about 197. I used that `randomIndex` to random generate a random index from the array.
+I decided that I wanted to give the users some hints to complete the end of the game since practically not *everyone* knows the entire world from the top of their heads. I did this by creating a new variable which I named `randomIndex` which will then generate a random number between 0 and the length of the entire array called countries. Keep in mind that the array `countries` is where all of the countries are listed which is about 197. I used that `randomIndex` to random generate a random index from the array.
 
 ```js
  function giveHint() {
@@ -53,7 +53,7 @@ I decided that I wanted to give the users some hints to complete the end of the 
             alert("Hint: Try " + hintCountry);
         }
 ```
-The user will get the hint in the form of an alert and it will be trigerred once the user clicks on the butto next to the text-box. Something that I could work on for the Beyond MVP could be to see if I can make 
+The user will get the hint in the form of an `alert` and it will be triggered once the user clicks on the butto next to the **text-box**. Something that I could work on for the *Beyond MVP* could be to see if I can make the hints depend on what the user has already inputted into the game. For example, if the user has already found the United States of America, the program should not be giving the USA as a hint since it has already been inserted.
 
 **explain here***
 ```js
@@ -70,6 +70,9 @@ The user will get the hint in the form of an alert and it will be trigerred once
 #### EDP + Skills
 
 The Engineering Design Process (EDP) that I'm currently in can be classified
+
+[Freedom Project Link](https://omers9293.github.io/sep11-freedom-project/)
+
 [Previous](entry04.md) | [Next](entry06.md)
 
 [Home](../README.md)
