@@ -41,7 +41,7 @@ I also decided that it was essential for me to disable the user's ability to zoo
                     // Trigger confetti animation
                     handleConfetti();
 ```
-The part of the code where it states `querySelector("input").disabled = true;` helps make the game more functionable by making it impossible to put more countries than the requirement. This is because when I put the short answer key of 
+The part of the code where it states `querySelector("input").disabled = true;` helps make the game more functionable by making it impossible to put more countries than the requirement. This is because when I put the short answer key of "Omer", it will not disable the user's ability to insert all of the other countries that remain. It's also helpful in letting the user that they have officially won the game. I 
 
 **explain here**
 ```js
