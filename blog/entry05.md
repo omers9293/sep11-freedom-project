@@ -53,7 +53,7 @@ I decided that I wanted to give the users some hints to complete the end of the 
             alert("Hint: Try " + hintCountry);
         }
 ```
-The user will get the hint in the form 
+The user will get the hint in the form of an alert and it will be trigerred once the user clicks on the butto next to the text-box. Something that I could work on for the Beyond MVP could be to see if I can make 
 
 **explain here***
 ```js
