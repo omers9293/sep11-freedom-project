@@ -23,7 +23,7 @@ Throughout the leaflet documentation, it was clear that the most efficient way t
         var markersLayer = L.layerGroup().addTo(map); // Layer group for markers
 ```
 
-I also decided that it was essential for me to disable the user's ability to zoom in the map because that would give away the entire point of the game since you would be able to cheat and see the names of the countries. And so I disabled the user's ability to scroll wheel zoom, drag, and to double click zoom. This will ensure a fair game and test the user's knowledge of how many countries they know without any outside help. I also noticed that it was hard to keep track of the countries and so I added `L.layerGroup().addTo(map);` to add a marker on every country the user has already inputted in the text-box just to keep track and make everything organized (more code was needed later on). 
+I also decided that it was essential for me to disable the user's ability to zoom in the map because that would give away the entire point of the game since you would be able to cheat and see the names of the countries. And so I disabled the user's ability to scroll wheel zoom, drag, and to double click zoom. This will ensure a fair game and test the user's knowledge of how many countries they know without any outside help. I also noticed that it was hard to keep track of the countries and so I added `L.layerGroup().addTo(map);` to add a marker on every country the user has already inputted in the text-box just to keep track and make everything organized (more code was needed later on).
 
 **explain here**
 
@@ -41,8 +41,7 @@ I also decided that it was essential for me to disable the user's ability to zoo
                     // Trigger confetti animation
                     handleConfetti();
 ```
-**explain a little more here**
-
+The part of the code where it states `querySelector("input").disabled = true;` helps make the game more functionable by making it impossible to put more countries than the requirement. This is because when I put the short answer key of 
 
 **explain here**
 ```js
