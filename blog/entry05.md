@@ -55,7 +55,7 @@ I decided that I wanted to give the users some hints to complete the end of the 
 ```
 The user will get the hint in the form of an `alert` and it will be triggered once the user clicks on the butto next to the **text-box**. Something that I could work on for the *Beyond MVP* could be to see if I can make the hints depend on what the user has already inputted into the game. For example, if the user has already found the **United States of America**, the program should not be giving the USA as a hint since it has already been inserted.
 
-The code below is the most important piece of code in the entire game and has taken such a long time to come up with. It takes in a parameter called `country` which will replace the country that the user will insert so that is interchangeable. I inserted an API using the help of a fellow peer (Sam) into the URL string. The keyword of `await` makes it clear that the function is actually waiting for an asynchronous operation which means it is expecting a response from the API. This is also what makes it possible for the marker to be placed on the country after the user has inputted within the text-box. 
+The code below is the most important piece of code in the entire game and has taken such a long time to come up with. It takes in a parameter called `country` which will replace the country that the user will insert so that is interchangeable. I inserted an API using the help of a fellow peer (Sam) into the URL string. The keyword of `await` makes it clear that the function is actually waiting for an asynchronous operation which means it is expecting a response from the API. This is also what makes it possible for the marker to be placed on the country after the user has inputted it within the text box.
 
 ```js
  async function placeMarker(country) {
@@ -66,8 +66,6 @@ The code below is the most important piece of code in the entire game and has ta
             L.marker([lat, lon]).addTo(map)
         }
 ```
-
-**explain a little more**
 #### EDP + Skills
 
 The Engineering Design Process (EDP) that I'm currently in can be classified
