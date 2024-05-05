@@ -43,7 +43,7 @@ The code below is essentially an event listener that looks for whenever the user
 ```
 The part of the code where it states `querySelector("input").disabled = true;` helps make the game more functionable by making it impossible to put more countries than the requirement. This is because when I put the short answer key of "Omer", it will not disable the user's ability to insert all of the other countries that remain. It's also helpful in letting the user that they have officially won the game. I found this [Confetti Libary](https://github.com/loonywizard/js-confetti) to be extremely helpful for when I wanted to create a ending sequence to the game after the user has officially won the game. I originally wanted it to be all over the screen but wasn't possible because leaflet.js was overrunning it which was completely normal. I called the function,`handleConfetti`, for it to work something I originally forgot to do.
 
-I decided that I wanted to give the users some hints to complete the end of the game
+I decided that I wanted to give the users some hints to complete the end of the game since practically not everyone knows the entire world from the top of their heads. I did this by 
 
 ```js
  function giveHint() {
