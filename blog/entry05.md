@@ -25,7 +25,7 @@ Throughout the leaflet documentation, it was clear that the most efficient way t
 
 I also decided that it was essential for me to disable the user's ability to zoom in the map because that would give away the entire point of the game since you would be able to cheat and see the names of the countries. And so I disabled the user's ability to scroll wheel zoom, drag, and to double click zoom. This will ensure a fair game and test the user's knowledge of how many countries they know without any outside help. I also noticed that it was hard to keep track of the countries and so I added `L.layerGroup().addTo(map);` to add a marker on every country the user has already inputted in the text-box just to keep track and make everything organized (more code was needed later on).
 
-The code below is essentially an event listener that 
+The code below is essentially an event listener that looks for whenever the user inputs the name "Omer" so it can alert the user that they have officially won and for the text-box to be disabled. Despite this not being a country, I chose to do this because when I'm presenting, it will not be possible to manually insert all 197 countries in order to demonstrate the confetti and end result of winning. So in short, the input of "Omer" will behave the same as if the user actually inserts all of the countries. 
 
 ```js
   document.addEventListener("keyup", (event) => {
