@@ -68,7 +68,7 @@ The code below is the most important piece of code in the entire game and has ta
 ```
 #### EDP + Skills
 
-The Engineering Design Process (EDP) that I'm currently in can be classified
+The Engineering Design Process (EDP) that I'm currently in can be classified as **Improve as needed** since now I'm in the process of expanding my MVP(Minimum Viable Product). I have finished coding my geography game and it works just like I had planned for it to be but there is still some tweaking and fixing 
 
 [Freedom Project Link](https://omers9293.github.io/sep11-freedom-project/)
 
