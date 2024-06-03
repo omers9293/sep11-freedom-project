@@ -10,7 +10,7 @@ I have officially finished my 11th-grade freedom project, including both the pre
 I feel like I have grown so much better at presenting in front of a large audience because I didn't feel as nervous this time as I did last year. Part of that was because I listened to Mr Mueller's advice about how "if you fail to plan, you are planning to fail" and so I was very much prepared on what I was going to say. I don't think I stuttered that much because I took quick pauses which enabled me not to use any filler words.
 
 #### EDP + Skills
-The Engineering Design Process (EDP) that I'm currently in can be classified as 
+The Engineering Design Process (EDP) that I'm currently in can be classified as **Communicate the results**
 [Previous](entry05.md)
 
 [Home](../README.md)
