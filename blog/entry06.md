@@ -6,8 +6,9 @@ I have officially finished my 11th-grade freedom project, including both the pre
 
 ##### Expo elevator pitch Takeaways
 
+
 ##### In-class presentation Takeaways
-I feel like I have grown so much better at presenting in front of a large audience because I didn't feel as nervous this time as I did last year. Part of that was because I listened to Mr Mueller's advice about how "if you fail to plan, you are planning to fail" and so I was very much prepared on what I was going to say. I don't think I stuttered that much because I took quick pauses which enabled me not to use any filler words. I also made sure to make sufficient eye contact with the audience and less on the slides since that would create a much more engaging and interactive presentation. 
+I feel like I have grown so much better at presenting in front of a large audience because I didn't feel as nervous this time as I did last year. Part of that was because I listened to Mr Mueller's advice about how "if you fail to plan, you are planning to fail" and so I was very much prepared on what I was going to say. I don't think I stuttered that much because I took quick pauses which enabled me not to use any filler words. I also made sure to make sufficient eye contact with the audience and less on the slides since that would create a much more engaging and interactive presentation.
 
 #### EDP + Skills
 The Engineering Design Process (EDP) that I'm currently in can be classified as **Communicate the results**
