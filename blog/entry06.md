@@ -7,7 +7,7 @@ I have officially finished my 11th-grade freedom project, including both the pre
 ##### Expo elevator pitch Takeaways
 
 ##### In-class presentation Takeaways
-For me personally, I feel like I have grown so much better at presenting in front of a large audience because I didn't feel t
+I feel like I have grown so much better at presenting in front of a large audience because I didn't feel as nervous this time as I did last year. Part of that was because I listened to Mr Mueller about 
 #### EDP + Skills
 
 [Previous](entry05.md)
